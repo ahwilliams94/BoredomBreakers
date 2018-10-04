@@ -1,0 +1,49 @@
+body{
+	background-image: url("towersbg.png");
+	background-size: cover;
+}
+
+.drop{
+	position: relative;
+	display: inline-block;
+	border-style: outset;
+	background-color: white;
+}
+
+.drop:hover{
+	border-style: inset;
+}
+
+svg{
+	background-color: white;
+}
+
+div#storeDiv{
+	height : 25%;
+	width : 50%;
+	clear : right;
+}
+
+svg#store{
+	width : 100%;
+}
+
+
+div#towers{
+	height: 500px;
+	width: 70%;
+}
+
+.towers{
+	height: 100%;
+	clear : right;
+}
+
+div#solution{
+	float: right;
+	width: 250px;
+	height: 200px;
+	background-color: white;
+	text-align: center;
+	overflow: auto;
+}

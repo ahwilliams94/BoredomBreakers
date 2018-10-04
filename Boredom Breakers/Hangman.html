@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="Hangman.css">
+	</head>
+	<body>
+		<nav>
+			<div class="drop"><a href="https://en.wikipedia.org/wiki/Hangman_(game)" target="_blank">Info</a></div>
+			<div class="drop">Time</div>
+		</nav>
+		<svg width="1000" height="500" id="space">
+			<line x1="300" y1="400" x2="700" y2="400" style="stroke:black;stroke-width:5"/>
+			<line x1="500" y1="50" x2="500" y2="400" style="stroke:black;stroke-width:5"/>
+			<line x1="500" y1="50" x2="700" y2="50" style="stroke:black;stroke-width:5"/>
+			<line x1="700" y1="50" x2="700" y2="125" style="stroke:black;stroke-width:5"/>
+		</svg>
+		<div class ="guesses" id ="umm">
+			<h1>
+				Guesses
+			</h1>
+			<div class ="guesses" id="words">
+				<h2>words</h2>
+			</div>
+			<div class ="guesses" id ="letters">
+				<h2>letters</h2>
+			</div>
+		</div>
+		<div id="wordarea">
+		</div>
+		<div id= "submiter">
+		<h3>What is your guess?</h3>
+		<input id="guess" type="text" autofocus/>
+		<button type="button" onclick="takeguess()">Guess</button>
+		</div>
+		
+		<script src="Hangman.js"></script>
+	</body>
+</html>

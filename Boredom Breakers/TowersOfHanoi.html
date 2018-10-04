@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="TowerOfHanoi.css">
+	</head>
+	<body>
+		<nav>
+			<div class="drop"><a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Info</a></div>
+			<div class="drop">Time</div>
+		</nav>
+		<div id="selector">
+			<select id="numDiscs">
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+			<button type="button" onclick="makeRoom()">Play</button>
+			<button type="button" onclick="drawReset()">Reset</button>
+			<button type="button" onclick="solve()">Solve</button>
+		</div>
+		<div id="storeDiv">
+			<svg id="store"></svg>
+		</div>
+		<div id="towers">
+			<svg id="tower1" class="towers" onclick="pickOrPlace(tower1,'tower1')">
+				<rect id="width" x="10%" y="80%" width="75%" height="15%" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+				<rect id="height" x="40%" y="5%" width="15%" height="75%" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+			</svg>
+			<svg id="tower2" class="towers" onclick="pickOrPlace(tower2,'tower2')">
+				<rect x="10%" y="80%" width="75%" height="15%" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+				<rect x="40%" y="5%" width="15%" height="75%" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+			</svg>
+			<svg id="tower3" class="towers" onclick="pickOrPlace(tower3,'tower3')">
+				<rect x="10%" y="80%" width="75%" height="15%" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+				<rect x="40%" y="5%" width="15%" height="75%" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+			</svg>
+			<div id="solution">
+				<h3> solution </h3>
+			</div>
+		</div>
+		
+		<script src="TowersOfHanoi.js"></script>
+	</body>
+</html>

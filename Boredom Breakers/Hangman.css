@@ -1,0 +1,57 @@
+body{
+	background-image: url("hangmanbg.png");
+	background-size: cover;
+}
+
+.drop{
+	position: relative;
+	display: inline-block;
+	border-style: outset;
+	background-color: white;
+}
+
+.drop:hover{
+	border-style: inset;
+}
+
+svg{
+	background-color: white;
+	margin-top:10px;
+	margin-right: 50px;
+	float: left;
+}
+
+div#umm{
+	height: 500px;
+	width: 300px;
+}
+
+div.guesses{
+	float:left;
+	text-align: center;
+	margin: 20px;
+	background-color: white;
+}
+
+div#submiter{
+	clear: left;
+}
+
+div#wordarea{
+	clear: left;
+	background-color:white;
+	width:500px;
+}
+
+div#wordarea div{
+	display: inline-block;
+	text-align: center;
+	width:20px;
+	margin: 20px;
+	border-bottom-style: solid;
+}
+
+div#wordarea p{
+	visibility:hidden;
+}
+
